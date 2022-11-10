@@ -34,10 +34,15 @@ export default function Home() {
               </p>
               <div className="flex gap-6 mt-12">
                 <button className="bg-yellow-600 text-black-500 font-bold py-5 px-8">
-                  <span>COMPRE AGORA</span>
+                  <a
+                    href="https://store.playstation.com/pt-br/product/UP9000-CUSA07408_00-00000000GODOFWAR"
+                    target="_blank"
+                  >
+                    COMPRE AGORA
+                  </a>
                 </button>
                 <button className="font-bold py-5 px-8 border">
-                  <span>SAIBA MAIS</span>
+                  <a>SAIBA MAIS</a>
                 </button>
               </div>
             </div>
@@ -55,7 +60,7 @@ export default function Home() {
               <Image src={frameSection} alt=""></Image>
             </div>
             <ul className="flex justify-between h-[560px] w-full gap-4">
-              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative">
+              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative opacity-50 hover:opacity-100 cursor-pointer">
                 <Image
                   src={kratosCharImg}
                   alt="kratos"
@@ -65,7 +70,7 @@ export default function Home() {
                   Kratos
                 </span>
               </li>
-              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative">
+              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative opacity-50 hover:opacity-100 cursor-pointer">
                 <Image
                   src={atreusCharImg}
                   alt="atreus"
@@ -75,7 +80,7 @@ export default function Home() {
                   Atreus
                 </span>
               </li>
-              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative">
+              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative opacity-50 hover:opacity-100 cursor-pointer">
                 <Image
                   src={freyaCharImg}
                   alt="freya"
@@ -85,7 +90,7 @@ export default function Home() {
                   Freya
                 </span>
               </li>
-              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative">
+              <li className="flex flex-col h-full justify-end items-end bg-ulSecondSection relative opacity-50 hover:opacity-100 cursor-pointer">
                 <Image
                   src={angrbodaCharImg}
                   alt="angrboda"
@@ -100,8 +105,8 @@ export default function Home() {
         </section>
         <section className="w-full h-screen">
           <div className="h-full w-full relative flex justify-center px-48 ">
-            <ul className="absolute w-[20%] left-[10%] flex flex-col items-center justify-center gap-6">
-              <li className="w-full">
+            <ul className="absolute w-[20%] left-[10%] flex flex-col items-center justify-center gap-6 ">
+              <li className="w-full cursor-pointer hover:border-2 border-yellow-600">
                 <Image
                   src={firstOptionThirdSectionImg}
                   alt="Kratos e Atreus no Gelo"
@@ -109,7 +114,7 @@ export default function Home() {
                   className="w-full h-auto"
                 ></Image>
               </li>
-              <li className="w-full">
+              <li className="w-full cursor-pointer hover:border-2 border-yellow-600">
                 <Image
                   src={secondOptionThirdSectionImg}
                   alt="Kratos e Atreus no Gelo"
@@ -117,10 +122,10 @@ export default function Home() {
                   className="w-full h-auto"
                 ></Image>
               </li>
-              <li className="w-full">
+              <li className="w-full cursor-pointer hover:border-2 border-yellow-600">
                 <Image
                   src={thirdOptionThirdSectionImg}
-                  alt="Kratos e Atreus no Gelo"
+                  alt="Kratos e Atreus contra Jörmungandr"
                   quality={100}
                   className="w-full h-auto"
                 ></Image>
@@ -138,8 +143,9 @@ export default function Home() {
               <p className="text-base opacity-80 w-[90%]">
                 Com a vingança contra os deuses do Olimpo em um passado
                 distante, Kratos agora vive como um mortal no reino dos deuses e
-                monstros nórdicos. <br/> <br/> É nesse mundo duro e implacável que ele deve
-                lutar para sobreviver...e ensinar seu filho a fazer o mesmo.
+                monstros nórdicos. <br /> <br /> É nesse mundo duro e implacável
+                que ele deve lutar para sobreviver...e ensinar seu filho a fazer
+                o mesmo.
               </p>
             </div>
           </div>
@@ -152,7 +158,7 @@ export default function Home() {
             </h3>
             <div className="flex gap-6 ">
               <div className=" h-full w-[50%] flex justify-between px-12 py-12 bg-black-300 relative">
-                <div className="w-[50%] flex flex-col gap-4">
+                <div className="w-[50%] flex flex-col justify-between gap-4">
                   <span className="text-2xl font-bold uppercase">
                     Poder rúnico refinado
                   </span>
@@ -160,9 +166,9 @@ export default function Home() {
                     Novas habilidades permitem que Kratos use seu machado de
                     maneiras inéditas.
                   </p>
-                  <button className="bg-yellow-600 w-fit text-black-500 font-bold py-2 px-2">
+                  <a href="https://godofwar.fandom.com/pt-br/wiki/Machado_Leviat%C3%A3" target="_blank" className="bg-yellow-600 w-fit text-black-500 font-bold py-2 px-2">
                     SAIBA MAIS
-                  </button>
+                  </a>
                 </div>
 
                 <Image
@@ -172,7 +178,7 @@ export default function Home() {
                 ></Image>
               </div>
               <div className=" h-fit w-[50%] flex justify-between px-12 py-12 bg-black-300 relative">
-                <div className="w-[50%] flex flex-col gap-4">
+                <div className="w-[50%] flex flex-col justify-between gap-4">
                   <span className="text-2xl font-bold uppercase">
                     Mais do que um garoto com arco
                   </span>
@@ -180,9 +186,9 @@ export default function Home() {
                     Atreus aprimorou suas habilidades de arquearia para desferir
                     novos ataques.
                   </p>
-                  <button className="bg-yellow-600 w-fit text-black-500 font-bold py-2 px-2">
+                  <a href="https://godofwar.fandom.com/pt-br/wiki/Arco_de_Garra#:~:text=O%20Arco%20de%20Garra%20%C3%A9,ser%20equipado%20com%20Invoca%C3%A7%C3%A3o%20R%C3%BAnica." target="_blank" className="bg-yellow-600 w-fit text-black-500 font-bold py-2 px-2">
                     SAIBA MAIS
-                  </button>
+                  </a>
                 </div>
 
                 <Image

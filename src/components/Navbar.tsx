@@ -35,10 +35,11 @@ export default function navbar() {
         </li>
         <li>
           {" "}
-          <button className="bg-yellow-600 text-black-500 font-bold py-5 px-8">
+          <a href="https://store.playstation.com/pt-br/product/UP9000-CUSA07408_00-00000000GODOFWAR" target="_blank" className="bg-yellow-600 text-black-500 font-bold py-5 px-8">
             {" "}
             COMPRE AGORA
-          </button>
+          </a>
+          
         </li>
       </ul>
     </nav>
